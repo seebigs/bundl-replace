@@ -1,0 +1,18 @@
+{
+  "name": "bundl-replace",
+  "version": "1.0.0",
+  "description": "Replace strings within your bundles",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seebigs/bundl-replace.git"
+  },
+  "author": "Chris Bigelow <seebigswork@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seebigs/bundl-replace/issues"
+  }
+}
