@@ -20,7 +20,7 @@ var replace = require('bundl-replace');
 bundl(targets)
     .then(replace(pattern, replacement))
     .then(write())
-    .all();
+    .go();
 ```
 
 ## Arguments
@@ -39,5 +39,5 @@ var replace = require('bundl-replace');
 bundl(targets)
     .then(replace.direct('(function(foo){', '(function(bar){'))
     .then(write())
-    .all();
+    .go();
 ```
