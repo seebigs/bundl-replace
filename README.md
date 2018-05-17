@@ -13,11 +13,11 @@ $ npm install --save-dev bundl-replace
 ## Use
 
 ```js
-var bundl = require('bundl');
+var Bundl = require('bundl');
 var write = require('bundl-write');
 var replace = require('bundl-replace');
 
-bundl(targets)
+new Bundl(targets)
     .then(replace(pattern, replacement))
     .then(write())
     .go();
@@ -32,11 +32,11 @@ Behave like [String.prototype.replace](https://developer.mozilla.org/en-US/docs/
 Sometimes it is desirable to do a direct string replace without converting to a RegEx. Note: this only replaces the first occurrence.
 
 ```js
-var bundl = require('bundl');
+var Bundl = require('bundl');
 var write = require('bundl-write');
 var replace = require('bundl-replace');
 
-bundl(targets)
+new Bundl(targets)
     .then(replace.direct('(function(foo){', '(function(bar){'))
     .then(write())
     .go();
